@@ -1,0 +1,160 @@
+@media screen and (width >= 1225px) {
+  .form-auto-arranged {
+    .el-form-item {
+      width: 33%;
+    }
+  }
+}
+
+@media screen and (600px <= width < 1225px) {
+  .form-auto-arranged {
+    .el-form-item {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (width < 600px) {
+  .form-auto-arranged {
+    .el-form-item {
+      width: 100%;
+    }
+  }
+}
+
+.form-auto-arranged {
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  div.item-tip-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .el-form-item__label {
+    font-size: 1rem;
+    text-align: right;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    height: 28px;
+    line-height: 28px;
+  }
+
+  .el-form-item {
+    margin-bottom: 12px;
+
+    .el-form-item__content {
+      flex-wrap: nowrap;
+      text-align: left;
+      align-items: flex-start;
+      line-height: 28px;
+    }
+
+    &.single-line {
+      width: 100%;
+    }
+
+    span.tip-warning {
+      font-size: 12px;
+      text-align: left;
+      line-height: 12px;
+      color: var(--el-color-warning-light-3);
+    }
+
+    .el-input__inner {
+      line-height: 26px;
+      height: 26px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .el-radio-group {
+      flex-wrap: nowrap;
+
+      .el-radio {
+        margin-right: 10px;
+        height: 28px;
+      }
+    }
+
+    .el-switch {
+      height: 28px;
+    }
+  }
+
+  .line-container-4 {
+    display: flex;
+    width: 100%;
+
+    .el-form-item {
+      width: 25%;
+    }
+  }
+
+  .line-container-3 {
+    display: flex;
+    width: 100%;
+
+    .el-form-item {
+      width: 33%;
+    }
+  }
+
+  .el-form-item.is-error {
+    margin-bottom: 0 !important;
+
+    .el-form-item__content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .el-form-item__error {
+      position: unset;
+      padding-top: 0;
+    }
+  }
+
+  .el-textarea.is-disabled .el-textarea__inner {
+    cursor: default;
+    font-size: 12px;
+  }
+
+  .el-select {
+    width: 100%;
+  }
+
+  .el-radio__label {
+    font-size: 1rem;
+  }
+
+  .el-date-editor {
+    height: 28px;
+    width: 100%;
+  }
+
+  .el-select .el-input {
+    height: 28px;
+  }
+
+  .el-button.is-circle {
+    margin: 0;
+  }
+}
+
+.form-auto-arranged {
+  &.no-error {
+    .el-form-item {
+      margin-bottom: 3px;
+    }
+  }
+}
+.dialog-noBodyPadding {
+  .el-dialog__body {
+    padding-top: 0;
+  }
+}

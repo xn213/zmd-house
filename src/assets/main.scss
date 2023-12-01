@@ -1,0 +1,29 @@
+@import "./base.scss";
+@import "custom-light";
+@import "custom-dark";
+@import "global";
+@import "form";
+@import "table";
+
+#app {
+  width: 100%;
+  max-width: 100%;
+  font-size: 12px;
+  font-weight: normal;
+}
+.color_blue {
+  color: #2853e0;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(0, 111, 255);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: rgba(0, 111, 255, 0.2);
+  }
+}

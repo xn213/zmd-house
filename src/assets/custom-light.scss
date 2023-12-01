@@ -1,0 +1,74 @@
+$--colors: (
+  "primary": (
+    "base": #2853e0,
+    "light-5": #ccc,
+    "light-9": #fff,
+  ),
+  "success": (
+    "base": #3dd070,
+  ),
+  "warning": (
+    "base": #ff8f00,
+  ),
+  "danger": (
+    "base": #ff3948,
+  ),
+  "error": (
+    "base": #db2828,
+  ),
+  "info": (
+    "base": #dcdfe6,
+  ),
+);
+$--tables: (
+  "border-color": #dcdfe6,
+  "text-color": #333,
+  "header-bg-color": #f8faff,
+);
+
+$--border-color: (
+  "default": #ccc,
+  "light": #d3deff,
+);
+
+$--common-component-size: (
+  "default": 30px,
+);
+
+$--font-size: (
+  "base": 12px,
+);
+
+$--drawer: (
+  "padding-primary": 10px,
+);
+
+$--text-color: (
+  "regular": #333,
+  "primary": #333,
+  "secondary": #ccc,
+  "placeholder": #333,
+);
+
+$--border-radius: (
+  "base": 4px,
+);
+
+@forward "../../node_modules/element-plus/theme-chalk/src/common/var.scss" with (
+  $colors: $--colors,
+  $table: $--tables,
+  $common-component-size: $--common-component-size,
+  $font-size: $--font-size,
+  $border-color: $--border-color,
+  $drawer: $--drawer,
+  $border-radius: $--border-radius,
+  $text-color: $--text-color,
+  $border-color-hover: #8092a9
+);
+@use "../../node_modules/element-plus/theme-chalk/src/index.scss" as *;
+
+:root {
+  --el-bg-color: #f5f7ff;
+  --el-fill-color-blank: #fdfdfd;
+  --el-fill-color-light: #f5f7fa;
+}

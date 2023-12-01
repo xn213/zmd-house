@@ -1,0 +1,27 @@
+td.el-descriptions__cell {
+  min-width: 100px;
+  word-break: break-all;
+  font-size: 12px;
+  padding: 1px;
+  border: none;
+
+  &.el-descriptions__label.is-bordered-label {
+    font-weight: unset;
+    text-align: right;
+    min-width: 150px;
+    color: #333333;
+    border: none !important;
+    padding: 0 10px 0 !important;
+    background-color: transparent;
+  }
+
+  &.el-descriptions__content.is-bordered-content {
+    background-color: #f5f7fa;
+    font-weight: unset;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 0 8px !important;
+    height: 28px;
+    width: 10000px;
+  }
+}

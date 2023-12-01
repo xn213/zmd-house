@@ -1,0 +1,104 @@
+.el-table {
+  border-radius: var(--el-border-radius-base);
+}
+
+.el-table .cell {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+.el-table thead th.el-table__cell {
+  color: var(--el-text-color-primary);
+  font-weight: bold;
+}
+
+.el-table__row {
+  cursor: pointer;
+}
+
+.el-table .even-row {
+  --el-table-tr-bg-color: none;
+}
+
+.el-table .odd-row {
+  --el-table-tr-bg-color: var(--el-fill-color-lighter);
+}
+
+.el-table .success-row {
+  --el-table-tr-bg-color: var(--el-color-primary-light-7);
+}
+
+// .el-table__cell.el-table__expanded-cell {
+//   //position: absolute;
+// }
+
+.el-table .warning-row {
+  --el-table-tr-bg-color: var(--el-color-warning-light-7);
+
+  .el-table-fixed-column--left {
+    background-color: var(--el-color-warning-light-7);
+  }
+
+  .el-table-fixed-column--right {
+    background-color: var(--el-color-warning-light-7);
+  }
+}
+
+.el-table {
+  border: 1px solid #dcdfe6;
+  border-radius: 0px;
+  font-size: 12px;
+  --el-table-header-bg-color: #8cc3ff;
+  th.el-table__cell {
+    padding: 4px 0;
+    height: 36px;
+  }
+  td.el-table__cell {
+    border-bottom: none;
+    padding: 4px 0;
+    height: 36px;
+  }
+}
+.el-table--border {
+  // border: none;
+  th.el-table__cell {
+    padding: 4px 0;
+    height: 36px;
+    border-right: 1px solid #dcdfe6;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      border-right: 2px solid #dcdfe6;
+      border-color: var(--el-color-primary);
+    }
+  }
+  .el-table__column-resize-proxy {
+    border-left: 2px solid #dcdfe6;
+    border-color: var(--el-color-primary);
+  }
+}
+.el-table--border::after,
+.el-table--border::before,
+.el-table--border .el-table__inner-wrapper::after,
+.el-table__inner-wrapper::before,
+.el-table__border-left-patch {
+  width: 0px;
+  height: 0px;
+}
+
+.el-table--border .el-table__inner-wrapper tr:first-child th:first-child,
+.el-table--border .el-table__inner-wrapper tr:first-child td:first-child {
+  border-left: none;
+}
+
+.el-table--border td.el-table__cell {
+  border-right: none;
+}
+.el-table--border th.el-table__cell.is-leaf,
+.el-table--border td.el-table__cell {
+  border-bottom: none;
+}
